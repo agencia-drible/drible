@@ -29,11 +29,14 @@
     </ul>
 
     <hr>
-    <h2>XAMPP</h2>o
+    <h2>XAMPP</h2>
     <p class="lead">Tens que fazer <a href="https://www.apachefriends.org/index.html" target="_blank">download</a> do XAMPP.</p>
     <hr>
     <h2>O que é XAMPP?</h2>
     <p class="lead">XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MySQLDB, PHP, Perl. É um método que torna extremamente fácil para os desenvolvedores a criar um servidor web local para fins de teste.</p>
+    <hr>
+    <h2> Aplicações do XAMPP </h2>
+    <p class="lead">Oficialmente, os desenvolvedores do XAMPP só pretendiam usá-lo como uma ferramenta de desenvolvimento, para permitir aos programadores de websites e programadores testar seu trabalho em seus próprios computadores, sem necessitar acesso algum à Internet. Na prática atual, XAMPP é utilizado atualmente para servir sites web na WWW, e com algumas modificações é geralmente seguro para uso em servidor público. Uma ferramenta especial é incluída para proteger facilmente as partes mais importantes e sensíveis do pacote. O XAMPP possui muitos aplicativos, dentre eles o Apache, MySQL, phpMyAdmin, FileZilla FTP Server, OpenSSL.</p>
     <hr>
 
     <h2>Git</h2>
