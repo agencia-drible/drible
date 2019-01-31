@@ -27,7 +27,6 @@
       <li class="lead">Aparência Customizável (tal como mudar a fonte da letra, esquema de cores, etc., do teu editor).</li>
       <li class="lead">Extensibilidade (que forneça algum mecanismo de plugin, ou que seja programável , para que um programador possa costumizar o editor com características adicionais).</li>
     </ul>
-
     <hr>
     <h2>O que é XAMPP?</h2>
     <p class="lead">XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MySQLDB, PHP, Perl. É um método que torna extremamente fácil para os desenvolvedores a criar um servidor web local para fins de teste.</p>
