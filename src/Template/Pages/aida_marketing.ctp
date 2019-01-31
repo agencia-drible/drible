@@ -1,107 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="generator" content="Jekyll v3.6.0">
-  <meta name="robots" content="noindex,nofollow">
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Documentation extras -->
-  <link href="/css/docs.min.css" rel="stylesheet">
-  <link href="/css/drible.css" rel="stylesheet">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="icon" href="/img/favicons/favicon-32x32.png" sizes="32x32" type="img/png">
-  <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="img/png">
-  <link rel="manifest" href="#">
-  <link rel="mask-icon" href="#" color="#000">
-  <link rel="icon" href="#">
-  <meta name="msapplication-config" content="#">
-  <meta name="theme-color" content="#000">
-
-  <!-- Meta -->
-  <meta name="description" content="Drible - Página de Introdução e Trabalho">
-  <meta name="author" content="Drible">
-
-  <!-- Twitter -->
-  <meta name="twitter:site" content="@getbootstrap">
-  <meta name="twitter:creator" content="@getbootstrap">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Drible">
-  <meta name="twitter:description" content="Drible - Página de Introdução e Trabalho">
-  <meta name="twitter:image" content="https://getbootstrap.com/assets/brand/bootstrap-social.png">
-
-  <!-- Facebook -->
-  <meta property="og:url" content="https://getbootstrap.com">
-  <meta property="og:title" content="Drible">
-  <meta property="og:description" content="Drible - Página de Introdução e Trabalho">
-  <meta property="og:image" content="http://getbootstrap.com/assets/brand/bootstrap-social.png">
-  <meta property="og:image:secure_url" content="https://getbootstrap.com/assets/brand/bootstrap-social.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <meta charset="utf-8">
-  <title>Marketing</title>
-</head>
-<body>
-  <!-- CONTENT -->
-  <main class="bd-masthead" id="content" role="main">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 ">
-          <!-- COLUNA DO MEIO -->
+<main class="bd-masthead" id="content" role="main">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <!-- Texto -->
+        <h1>AIDA (atenção, interesse, desejo e ação):
+          <br>entender as 4 etapas do conceito</h1>
           <div class="text-center">
-            <h1> AIDA - Marketing</h1>
-            <hr>
+            <img src="\img\aida-model2.png" class="img-fluid p-2">
           </div>
-        </br>
-      </br>
-      <h2> Introdução </h2>
-      <p class="lead">Apesar de diversos estudiosos darem o crédito do Modelo AIDA a E.K.Strong por tê-lo publicado pela primeira vez na sua obra "Theories of Selling" (Teorias de vendas) em 1925, O  criador foi ST. Elmo Lewis, em 1898. Facto confirmado pelo próprio Strong na sua obra.
-        Os patamares, Atenção, Interesse, Desejo e Ação, formam uma hierarquia linear que os consumidores passam no processo de compra. O modelo AIDA é talvez o modelo de marketing mais conhecido entre os não-marketers de todos os  modelos clássicos de marketing. Muitos profissionais de marketing também acham útil, talvez desde que a aplicamos diariamente, consciente ou inconscientemente, quando pensamos em como tornar eficazes as nossas comunicações de marketing.</p>
-        <!-- ST. Elmo Lewis -->
-        <div class="text-center">
-          <img src="/img/sr.jpg" class="img-fluid">
-        </div>
-        <hr>
-        <h2>Qual é o modelo AIDA?</h2>
-        <p class="lead">O Modelo AIDA identifica os estágios cognitivos pelos quais um indivíduo passa durante o processo de compra de um produto ou serviço. É um funil de compras em que os compradores vão e vêm em cada etapa para apoiá-los na compra final.
-          Deixa de ser um relacionamento só entre o comprador e a empresa, uma vez que a mídia social a estendeu para alcançar os diferentes objetivos da AIDA por meio de informações adicionadas por outros clientes através de redes sociais e comunidades.</p>
-          <!-- PIRAMIDE MODELO -->
-          <div class="text-center">
-            <img src="/img/imgsigla.jpg" class="img-fluid">
-          </div>
-          <hr>
-          <h3>O que significa a sigla?</h3>
+          <p class="lead">AIDA é um modelo que tenta explicar como funciona o comportamento humano em relação à aquisição de um produto ou serviço. O modelo, AIDA, determinou uma série de passos que descrevem o processo que um comprador de um determinado produto passa antes de fechar a venda.</p>
+          <p class="lead">Apesar de diversos estudiosos darem o crédito do Modelo AIDA a E.K.Strong por tê-lo publicado por primeira vez em sua obra "Theories of Selling" (Teorias de vendas) em 1925, O  criador foi ST. Elmo Lewis, em 1898. Fato confirmado pelo próprio Strong em sua obra.</p>
+          <p class="lead">Os estágios, Atenção, Interesse, Desejo e Ação, formam uma hierarquia linear que os consumidores passam no processo de compra.</p>
           <ul>
-            <li class="lead"><strong> Atenção:</strong> criação de reconhecimento da marca ou a afiliação com seu produto ou serviço.</li>
-            <li class="lead"><strong> Interesse:</strong> conceber interesse nos benefícios do seu produto ou serviço e interesse suficiente para incentivar o comprador a começar a pesquisar.</li>
-            <li class="lead"><strong> Desejo:</strong> pelo seu produto ou serviço através de uma 'ligação emocional', mostrando a sua personalidade da marca. Mova o consumidor de 'gosto' para o 'querer'.</li>
-            <li class="lead"><strong> Ação:</strong> CTA -  Mova o comprador para conversar diretamente com a sua empresa e dar o próximo passo, ou seja, trazer um folheto, fazer um telefonema, ler o seu folheto informativo ou participar em discussões ao vivo, etc.</li>
+            <p class="lead">Dessa forma, para adquirir um produto ou serviço, o consumidor deve, obrigatoriamente:</p>
+            <li class="lead">Saber da existência do produto ou serviço. (Atenção)</li>
+            <li class="lead">Estar interessado o suficiente para prestar atenção nas características, especificações e benefícios do produto. (Interesse)</li>
+            <li class="lead">Ter um desejo de obter os benefícios que o produto oferece. (Desejo)</li>
+            <li class="lead">Comprar o produto. (Ação)</li>
           </ul>
-
           <div class="text-center">
-            <img src="/img/esquema.jpg" class="img-fluid">
+          <img src="/img/esquema.jpg" class="img-fluid p-3">
           </div>
-          <hr>
-          <h2>Como usar o modelo AIDA?</h2>
-          <p class="lead"><strong>Então, como é que isso pode ser aplicado ao planejamento de marketing?</strong> Ele deveria ser chamado de modelo de comunicação e não de decisão, pois está de certa forma a identificar as empresas, de como e quando se comunicarem durante cada um dos patamares, pois os consumidores usarão plataformas diferentes, interagindo em diferentes pontos de contato e exigindo informações diferentes.</p>
-          <p class="lead">Então, pode usar isso para ajudar a planejar a sua campanha de comunicação personalizada e direcionada.</p>
-          <p class="lead">Faça a si mesmo algumas perguntas importantes ao longo dos seguintes patamares: </p>
-          <ul>
-            <li class="lead"><strong> Atenção:</strong> como podemos conscientizar os compradores sobre os nossos produtos ou serviços? Qual é a nossa <a href="https://www.smartinsights.com/online-pr/">estratégia de divulgação</a> ? Qual é a nossa campanha de <a href="https://www.smartinsights.com/online-brand-strategy/brand-positioning/digital-brand-development/">consciencialização de marca</a> ? Quais as ferramentas ou plataformas usamos? Quais devem ser as mensagens? </li>
-            <li class="lead"><strong> Interesse:</strong> como vamos conquistar o seu interesse? Qual é a nossa <a href="https://www.smartinsights.com/content-management/content-marketing-creative-and-formats/content-marketing-strategies-for-building-brand-loyalty-and-relationships/"> estratégia de conteúdo</a> ? Como podemos disponibilizar essas informações e onde?</li>
-            <li class="lead"><strong> Desejo:</strong>  O que torna o nosso <a href="http://www.targetinternet.com/establishing-your-brands-social-media-voice/"> produto ou serviço desejado</a> ? Como interagimos pessoalmente para fazer uma ligação emocional? Conversas online? Resposta imediata ao feed do Twitter? Partilhar dicas e conselhos?</li>
-            <li class="lead"><strong> Ação:</strong> Quais são as chamadas para as ações e onde as colocamos? É fácil para os consumidores ligarem-se? Pense em qual canal ou plataforma de marketing você está a utilizar e como aderir, ou seja, através de <a href="https://www.smartinsights.com/email-marketing/email-communications-strategy/email-marketing-success-through-expectation-management/"> e - mails</a> , site, <a href="https://www.smartinsights.com/conversion-optimisation/landing-page-optimisation/where-is-the-best-place-to-put-your-cta/">páginas</a> , chamadas telefônicas, etc.</li>
-            <li class="lead"><strong> Conservação:</strong> Qual é a proposta para manter a lealdade? Em que estágio encorajamos isso <a href="https://www.smartinsights.com/digital-marketing-strategy/customer-retention-strategy/7-questions-to-drive-customer-engagement/">on-line</a> e off-line e como?</li>
-          </ul>
+          <h2>Atenção</h2>
+          <p class="lead">O principal objetivo da primeira etapa do conceito AIDA é ganhar a atenção do visitante, fazê-lo perceber da oferta.</p>
+          <p class="lead">Por isso, tem de tomar cuidado com o uso de cores, tamanho e posição dos elementos da página. Deixe as cores fortes e contrastantes e a posição de destaque somente para aquilo que realmente for importante que o usuário perceba. Ter um site rápido também faz diferença.</p>
+          <h2>Interesse</h2>
+          <p class="lead">Mais do que atrair a atenção, é preciso despertar o interesse do visitante.</p>
+          <p class="lead">Informações em destaque, como títulos e subtítulos ou os textos de banners, devem mostrar para o visitante que sua empresa tem algo que ele procura, algo que vale a pena.</p>
+          <p class="lead">Qualquer pessoa que trabalhe com compra de Google AdWords, por exemplo, sabe que a taxa de conversão aumenta muito quando a palavra-chave buscada aparece em destaque na Landing Page.</p>
+          <p class="lead">Isso atrai o visitante e faz com que ele siga para o próximo passo. Nem sempre isso aconteceria se a palavra-chave estivesse no meio de um bloco de texto sem destaque algum.</p>
+          <h2>Desejo</h2>
+          <p class="lead">Enquanto as etapas anteriores do AIDA não costumam passar de segundos, nesse ponto a coisa pode demorar mais.</p>
+          <p class="lead">Aqui as informações são analisadas em mais detalhes e o visitante observa se a oferta e sua empresa de fato são capazes de atender às necessidades dele, se é uma opção válida e confiável.</p>
+          <p class="lead">Indicadores de confiabilidade (depoimentos, lista de clientes, formas de garantia, comentários de clientes, etc) costumam ser responsáveis por alterar significativamente a taxa de conversão.</p>
+          <p class="lead">Uma observação importante: em conversões mais simples, como o download de um eBook, não chega a ser necessário inserir depoimentos ou listas de clientes.</p>
+          <p class="lead">Ícones que mostram o número de vezes que o material foi compartilhado nas mídias sociais, por exemplo, já são o suficiente para mostrar que o conteúdo vale a pena.</p>
+          <h2>Ação</h2>
+          <p class="lead">Na etapa de ação o papel da sua empresa é não atrapalhar.</p>
+          <p class="lead">Tendo instruções claras do que fazer, mantendo um fluxo coerente durante a conversão e não exigindo informações sensíveis ou formulários longos, a conversão tende a acontecer.</p>
+          <h2>Como é usado?</h2>
+          <p class="lead">O modelo AIDA moldou os pontos de vista sobre marketing e estratégias de vendas por mais de 100 anos. A fórmula ainda pode ser encontrada nos manuais de marketing padrão atuais. Além disso, o AIDA também é usado no RP para planejar e analisar a eficácia das campanhas de RP, e ainda fornece informações valiosas para a análise de mensagens publicitárias. O benefício desta fórmula simples pode ser encontrado em sua simplicidade e possibilidades de aplicações flexíveis em outras áreas. No e-commerce, por exemplo, a eficácia da apresentação do produto em uma loja on-line pode ser analisada usando os quatro aspetos da fórmula AIDA.</p>
         </div>
+        <div class="col-2"></div>
       </div>
     </div>
   </main>
-</body>
-</html>
