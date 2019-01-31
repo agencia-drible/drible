@@ -29,6 +29,12 @@
     </ul>
 
     <hr>
+    <h2>XAMPP</h2>o
+    <p class="lead">Tens que fazer <a href="https://www.apachefriends.org/index.html" target="_blank">download</a> do XAMPP.</p>
+    <hr>
+    <h2>O que é XAMPP?</h2>
+    <p class="lead">XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MySQLDB, PHP, Perl. É um método que torna extremamente fácil para os desenvolvedores a criar um servidor web local para fins de teste.</p>
+    <hr>
 
     <h2>Git</h2>
 
@@ -80,20 +86,18 @@
 
     <hr>
 
+
     <h2>Como obter o GitHub?</h2>
 
     <p class="lead"><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> (para Windows e Mac)</p>
 
     <p class="lead">Agora vamos por isto tudo em prática. Clica <a href="/estagiarios/web/hellodrible" target="_blank">aqui</a>.</p>
-
     <hr>
 
+    <h2 class="pb-3">Repositórios</h2>
     <h2> Como criar um novo repositório no git usando as linhas de comando. </h2>
-
     <p class="lead"> Como primeiro instinto, quando se começa algo novo, devemos usar <code> git init</code>.
-
       <hr>
-      <h2>Repositórios</h2>
       <h2> Criar um repositório do zero: </h2>
       <ul>
         <li class="lead"> Criar um diretório para conter o projecto </li>
