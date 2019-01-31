@@ -29,17 +29,42 @@
     </ul>
 
     <hr>
-    <h2>XAMPP</h2>o
-    <p class="lead">Tens que fazer <a href="https://www.apachefriends.org/index.html" target="_blank">download</a> do XAMPP.</p>
-    <hr>
     <h2>O que é XAMPP?</h2>
     <p class="lead">XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MySQLDB, PHP, Perl. É um método que torna extremamente fácil para os desenvolvedores a criar um servidor web local para fins de teste.</p>
     <hr>
-
+    <h2> Aplicações do XAMPP </h2>
+    <p class="lead">Oficialmente, os desenvolvedores do XAMPP só pretendiam usá-lo como uma ferramenta de desenvolvimento, para permitir aos programadores de websites e programadores testar seu trabalho em seus próprios computadores, sem necessitar acesso algum à Internet. Na prática atual, XAMPP é utilizado atualmente para servir sites web na WWW, e com algumas modificações é geralmente seguro para uso em servidor público. Uma ferramenta especial é incluída para proteger facilmente as partes mais importantes e sensíveis do pacote. O XAMPP possui muitos aplicativos, dentre eles o Apache, MySQL, phpMyAdmin, FileZilla FTP Server, OpenSSL.</p>
+    <hr>
+    <h2>XAMPP</h2>
+    <p class="lead">Tens que fazer <a href="https://www.apachefriends.org/index.html" target="_blank">download</a> do XAMPP.</p>
+    <hr>
+    <h2> Painel de controlo do XAMPP </h2>
+    <p class="lead">Após instalares execute o ícone: “xampp-control.exe”, irá abrir o painel de controle do XAMPP conforme figura abaixo:</p>
+    <div class="text-center pb-3">
+      <img src="/img/xampp.jpg" class="fluid-img">
+    </div>
+    <p class="lead">Repare que todos os serviços estão parados, vamos instalar os serviços APACHE e MYSQL para que eles sejam iniciados automaticamente ao reiniciar o servidor, clicando na coluna “Service”. Irá aparecer uma caixa de texto solicitando a confirmação da instalação, após concluirmos a instalação, vamos iniciar os serviços pela primeira vez, ficando conforme a figura abaixo:</p>
+    <div class="text-center p-3">
+      <img src="/img/xampp2.jpg" class="fluid-img">
+    </div>
+    <hr>
+    <h2> Funcionalidades do painel de controlo </h2>
+    <p class="lead">Neste momento o XAMPP encontra-se instalado e funcionando, vamos explorar o painel de controle a fim de entender melhor suas funcionalidades.</p>
+<ul>
+<li class="lead">Coluna “Service“: A coluna service serve para Instalar e Desinstalar os serviços no Windows.</li>
+<li class="lead">Coluna “PIDs”: Process identifier (identificador de processo), PID ou ainda process ID é um número único que é atribuído pelo sistema operativo quando um processo é executado. Esse número é utilizado para se fazer referência a um processo que está a executar. Fonte: http://pt.wikipedia.org/wiki/Pid.</li>
+<li class="lead">Coluna “Port(s)”: Mostra as portas utilizadas pelo determinado serviço.</li>
+<li class="lead">Coluna “Actions”: Nesta coluna estão as opção de Stop: Pausa ou iniciar o serviço; Admin: Abre a pagina de administração do serviço; Config: Atalho para os principais arquivos de configuração do serviço; e Logs: Logs relacionados ao serviço.</li>
+</ul>
+    <hr>
+    <h2> Pasta htdocs </h2>
+    <p class="lead">Após iniciar os servidores do XAMPP, seu servidor web local estará disponível no endereço http://127.0.0.1. Para armazenar arquivos, procure pela pasta htdocs no diretório que você extraiu os arquivos do XAMPP. Todos os arquivos salvos neste local estarão disponíveis pelo endereço acima.</p>
+    <div class="text-center">
+    <img src="/img/htdocs.png" class="fluid-img">
+    </div>
+    <hr>
     <h2>Git</h2>
-
     <h3>O que é um git?</h3>
-
     <p class="lead">Git é um tipo de sistema de controlo de versões que torna mais fácil monitorizar as alterações no ficheiro. Por exemplo, quando editas um ficheiro, git pode ajudar te a determinar exatamente oque mudou, quando mudou e porquê.</p>
 
     <p class="lead">É útil para coordenar trabalho entre múltiplas pessoas num projeto, e para monitorizar o progresso ao longo do tempo guardando “checkpoints”.</p>
@@ -109,5 +134,5 @@
         <li class="lead"> Escreva <code>git push -u origin master</code></li>
       </ul>
 
-        </div>
-      </main>
+    </div>
+  </main>
