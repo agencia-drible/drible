@@ -121,6 +121,10 @@ class PagesController extends AppController
    }
 
     public function ubuntu(){
-      
+
+    }
+
+    public function postfixUbuntu(){
+
     }
 }

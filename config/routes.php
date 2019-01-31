@@ -91,6 +91,7 @@ Router::scope('/', function (RouteBuilder $routes) {
 
   $routes->connect('/ubuntu', ['controller' => 'Pages', 'action' => 'ubuntu']);
 
+  $routes->connect('/postfix', ['controller' => 'Pages', 'action' => 'postfixUbuntu']);
     /**
 
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
