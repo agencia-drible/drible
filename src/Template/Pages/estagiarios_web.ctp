@@ -99,40 +99,11 @@
         <li class="lead"> Criar um diretório para conter o projecto </li>
         <li class="lead"> Entre no novo diretório</li>
         <li class="lead"> Escreva <code> git init </code></li>
-        <li class="lead"> Escreva <code> git add README.md </code></li>
+        <li class="lead"> Escreva <code> git --add all </code></li>
         <li class="lead"> Escreva <code> git commit -m "first commit" </code></li>
         <li class="lead"> Escreva <code>git remote add origin git@github.com:alexpchin/<"reponame">.git</code></li>
         <li class="lead"> Escreva <code>git push -u origin master</code></li>
       </ul>
-      <p class="lead">O primeiro arquivo para criar (e adicionar e confirmar) é provavelmente um arquivo ReadMe, seja como texto simples ou com <a href="https://daringfireball.net/projects/markdown/">Markdown</a> , descrevendo o projeto .</p>
-      <p class="lead">O Markdown permite que você adicione um pouco de marcação de texto, como <a href="https://en.wikipedia.org/wiki/Hyperlink">hiperlinks</a> , <strong>negrito</strong> / <i>itálico</i> , ou para indicar o código com um <code>monospace</code> font. O Markdown é facilmente convertido para html para visualização em um navegador da web, e o GitHub fará isso automaticamente. </p>
-      <hr>
-      <h2>Criar um repositório para um projeto existente: </h2>
-      <ul>
-        <li class="lead"> Selecione o diretório que contém o projeto</li>
-        <li class="lead"> Escreva <code>git init</code></li>
-        <li class="lead"> Escreva <code>git add</code> para adicionar todos os arquivos relevantes</li>
-        <li class="lead"> Provavelmente desejará criar um <code>.gitignore</code> arquivo imediatamente, para indicar todos os arquivos que não deseja localizar. Use <code>git add .gitignore</code> também</li>
-        <li class="lead"> Escreva <code> git commit </code></li>
-      </ul>
-        <hr>
-        <h2>Liga-o ao github</h2>
-        <p class="lead">Agora que já tens um repositório local do git, já o podes usar assim que quiseres. Porém se quiseres ligar-te ao github, segue os seguintes passos: </p>
-        <ul>
-        <li class="lead"> Entra no <a href="https://github.com/">github</a></li>
-        <li class="lead"> <a href="https://github.com/login">Entra</a> na tua conta ou <a href="https://github.com/join?source=login">regista-te</a></li>
-        <li class="lead"> Clica no botão que diz "Novo repositório" no canto superior direito. Terás uma opção lá para inicializar o repositório com um arquivo README.</li>
-        <li class="lead"> Clica no botão "Criar repositório"</li>
-        </ul>
-        <p class="lead">Agora, segue o segundo conjunto de instruções, "Enviar um repositório existente"</p>
-        <code>$ git remote add origin git@github.com:username/new_repo
-        </br>$ git push -u origin master
-        </code>
-        <p></p>
-        <p class="lead">Na verdade, a primeira linha das instruções dirá</p>
-        <code>$ git remote add origin https://github.com/username/new_repo </code>
-        <p class="lead">Podes usar <code>it@github.com:username/new_repo</code> em vez de <code>https://github.com/username/new_repo</code>, como o primeiro é para uso com o <a href="https://en.wikipedia.org/wiki/Secure_Shell2">ssh</a> (se configurares o ssh como mencionei em <a href="https://kbroman.org/github_tutorial/pages/first_time.html">"Primeira vez"</a>, então não terás que escrever a tua password todas as vezes que tu "empurrares" as coisas para o github). Se usares a última construção, terás que escrever a tua password do github todas as vezes que tu pressionares o github.o</p>
-
 
         </div>
       </main>
