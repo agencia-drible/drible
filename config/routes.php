@@ -87,6 +87,10 @@ Router::scope('/', function (RouteBuilder $routes) {
 
   $routes->connect('/web/processos/novo-projeto', ['controller' => 'Pages', 'action' => 'webProcessosNovoProjeto']);
 
+  $routes->connect('/marketing', ['controller' => 'Pages', 'action' => 'aidaMarketing']);
+
+  $routes->connect('/ubuntu', ['controller' => 'Pages', 'action' => 'ubuntu']);
+
     /**
 
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
