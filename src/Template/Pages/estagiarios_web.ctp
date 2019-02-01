@@ -68,9 +68,9 @@
     </div>
     <hr>
     <h2> Pasta htdocs </h2>
-    <p class="lead">Após iniciar os servidores do XAMPP, seu servidor web local estará disponível no endereço http://127.0.0.1. Para armazenar arquivos, procure pela pasta htdocs no diretório que você extraiu os arquivos do XAMPP. Todos os arquivos salvos neste local estarão disponíveis pelo endereço acima.</p>
+    <p class="lead">Após iniciar os servidores do XAMPP, seu servidor web local estará disponível no endereço http://127.0.0.1. Para armazenar arquivos, procure pela pasta htdocs no diretório que você extraiu os arquivos do XAMPP. Todos os arquivos guardados neste local estarão disponíveis pelo endereço acima.</p>
     <div class="text-center">
-      <img src="/img/htdocs.png" class="fluid-img">
+      <img src="/img/htdocs.PNG" class="fluid-img">
     </div>
     <hr>
     <h2>Git</h2>
