@@ -159,178 +159,350 @@
             <!-- REDES -->
             <h2> Comandos de Rede </h2>
             <hr>
-            <h2>wget</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>wget [option]... [URL]...</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead"><code>wget</code> significa "<strong>w</strong>eb <strong>get</strong>"</p>
-            <p class="lead"><code>wget</code> é um comando utilitario que faz download de ficheiros de uma rede</p>
-            <hr>
-            <h2>dig</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>dig [@server] [-b address] [-c class] [-f filename] [-k filename] [-p port#] [-t type] [-x addr] [-y name:key] [-4] [-6] [name] [type] [class] [queryopt...]<br><br></code>
-            <code>dig [-h]<br><br></code>
-            <code>dig [global-queryopt...] [query...]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">dig (que significa <strong>D</strong>omain <strong>I</strong>nformation <strong>G</strong>roper) é uma ferramenta flexível para interrogar servidores de nomes DNS.</p>
-            <hr>
-            <h2>ifconfig</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>ifconfig [-v] [-a] [-s] [interface]<br><br></code>
-            <code>ifconfig [-v] interface [aftype] options | address ...</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead"><code>ifconfig</code> significa "<strong>I</strong>nter<strong>f</strong>ace <strong>Config</strong>uration", é usado para visualizar e alterar a configuração das interfaces de rede em seu sistema.</p>
-            <hr>
-            <h2>ifdown</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>ifdown [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">ifdown retira uma interface de rede, colocando-a em um estado em que não pode transmitir ou receber dados.</p>
-            <hr>
-            <h2>ifup</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>ifup [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...<br><br></code>
-            <code>ifup -h|--help<br><br></code>
-            <code>ifup -V|--version</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">ifup traz uma interface de rede para cima, disponibilizando-a para transmitir e receber dados.</p>
-            <hr>
-            <h2>ifquery</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>ifquery [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...<br><br></code>
-            <code>ifquery -l|--list [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">ifquery analisa a configuração de uma interface de rede, permitindo que você obtenha respostas para perguntas sobre como ela está configurada atualmente.</p>
-            <hr>
-            <h2>mtr</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>mtr [-hvrctglspni46] [--help] [--version] [--report] [--report-cycles COUNT] [--curses] [--split] [--raw] [--no-dns] [--gtk] [--address IP.ADD.RE.SS] [--interval SECONDS] [--psize BYTES | -s BYTES] HOSTNAME [PACKETSIZE]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">Diagnóstico de rede (<code>traceroute</code> / <code>ping</code>)</p>
-            <p class="lead">O <code>mtr</code> combina a funcionalidade dos programas <code>traceroute</code> e <code>ping</code> em uma ferramenta de diagnóstico de rede.</p>
-            <hr>
-            <h2>nc</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>nc [-46bCDdhklnrStUuvZz] [-I length] [-i interval] [-O length] [-P proxy_username] [-p source_port] [-q seconds] [-s source] [-T toskeyword] [-V rtable] [-w timeout] [-X proxy_protocol] [-x proxy_address[:port]] [destination] [port]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead"><code>nc</code> é o comando que executa o netcat, um utilitário simples do Unix que lê e grava dados através de conexões de rede, usando o protocolo TCP ou UDP. Ele é projetado para ser uma ferramenta de "back-end" confiável que pode ser usada diretamente ou conduzida por outros programas e scripts. Ao mesmo tempo, é uma ferramenta de depuração e exploração de rede rica em recursos, pois pode criar praticamente qualquer tipo de conexão que você precisa e possui vários recursos internos interessantes.</p>
-            <hr>
-            <h2>netstat</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>netstat [address_family_options] [--tcp|-t] [--udp|-u] [--raw|-w] [--listening|-l] [--all|-a] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--symbolic|-N] [--extend|-e[--extend|-e]] [--timers|-o] [--program|-p] [--verbose|-v] [--continuous|-c]<br><br></code>
-            <code>netstat {--route|-r} [address_family_options] [--extend|-e[--extend|-e]] [--verbose|-v] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
-            <code>netstat {--interfaces|-i} [--all|-a] [--extend|-e[--extend|-e]] [--verbose|-v] [--program|-p] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
-            <code>netstat {--groups|-g} [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
-            <code>netstat {--masquerade|-M} [--extend|-e] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
-            <code>netstat {--statistics|-s} [--tcp|-t] [--udp|-u] [--raw|-w]<br><br></code>
-            <code>netstat {--version|-V}<br><br></code>
-            <code>netstat {--help|-h}</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead"><code>netstat</code> ("<code>net</code>work <code>stat</code>istics") é uma ferramenta de linha de comando que exibe conexões de rede (entrada e saída), tabelas de roteamento e várias interfaces de rede (controlador de interface de rede ou interface de rede definida por software) e de protocolo de rede.</p>
-            <hr>
-            <h2>nslookup</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>nslookup [-option] [name | -] [server]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">O <code>nslookup</code>, que significa "<code>n</code>ame <code>s</code>erver <code>lookup</code>", é uma ferramenta útil para descobrir informações sobre um domínio nomeado.</p>
-            <hr>
-            <h2>ip</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>ip [ OPTIONS ] OBJECT { COMMAND | help }</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">Mostrar e manipular roteamento, dispositivos, roteamento de políticas e túneis.</p>
-            <hr>
-            <h2>ping</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>ping [-LRUbdfnqrvVaAB] [-c count] [-m mark] [-i interval] [-l preload] [-p pattern] [-s packetsize] [-t ttl] [-w deadline] [-F flowlabel] [-I interface] [-M hint] [-N nioption] [-Q tos] [-S sndbuf] [-T timestamp option] [-W timeout] [hop ...] destination</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">O <code>ping</code> é uma maneira simples de enviar dados de rede e receber dados de rede de outro computador em uma rede. É frequentemente usado para testar, no nível mais básico, se outro sistema pode ser acessado por uma rede e, em caso afirmativo, quanto tempo leva para que os dados sejam trocados.</p>
-            <hr>
-            <h2>rsync</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <p class="lead">Uso local:</p>
-            <code>rsync [OPTION...] SRC... [DEST]</code>
-            <p class="lead">Acesso via shell remoto (PULL):</p>
-            <code>rsync [OPTION...] [USER@]HOST:SRC... [DEST]</code>
-            <p class="lead">Acesso via shell remoto (PUSH):</p>
-            <code>rsync [OPTION...] SRC... [USER@]HOST:DEST</code>
-            <p class="lead">Acesso via daemon rsync (PULL):</p>
-            <code>rsync [OPTION...] [USER@]HOST::SRC... [DEST]<br><br></code>
-            <code>rsync [OPTION...] rsync://[USER@]HOST[:PORT]/SRC... [DEST]</code>
-            <p class="lead">Acesso via daemon rsync (PUSH):</p>
-            <code>rsync [OPTION...] SRC... [USER@]HOST::DEST<br><br></code>
-            <code>rsync [OPTION...] SRC... rsync://[USER@]HOST[:PORT]/DEST</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">O rsync é uma ferramenta de cópia de arquivos rápida e extraordinariamente versátil. Pode copiar localmente, para / de outro host através de qualquer shell remoto, ou para / de um daemon rsync remoto. Ele oferece um grande número de opções que controlam cada aspecto de seu comportamento e permite uma especificação muito flexível do conjunto de arquivos a serem copiados. É famosa por seu algoritmo de transferência delta, que reduz a quantidade de dados enviados pela rede enviando apenas as diferenças entre os arquivos de origem e os arquivos existentes no destino. O rsync é amplamente usado para backups e espelhamento e como um comando de cópia aprimorado para uso diário.</p>
-            <hr>
-            <h2>ethtool</h2>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">O ethtool é usado para consultar e controlar configurações de hardware e driver de dispositivo de rede, particularmente para dispositivos Ethernet com fio.</p>
-            <hr>
-            <h2>traceroute</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>traceroute [-46dFITUnreAV] [-f first_ttl] [-g gate,...] [-i device] [-m max_ttl] [-p port] [-s src_addr] [-q nqueries] [-N squeries] [-t tos] [-l flow_label] [-w waittime] [-z sendwait] [-UL] [-D] [-P proto] [--sport=port] [-M method] [-O mod_options] [--mtu] [--back] host [packet_len] </code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead"><code>raceroute</code> imprime a rota que os pacotes levam para um host de rede.</p>
-            <hr>
-            <h2>hostname</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>hostname [-v] [-a|--alias] [-d|--domain] [-f|--fqdn|--long] [-A|--all-fqdns] [-i|--ip-address] [-I|--all-ip-addresses] [-s|--short] [-y|--yp|--nis]<br><br></code>
-            <code>hostname [-v] [-b|--boot] [-F|--file file name] [hostname]<br><br></code>
-            <code>hostname [-v] [-h|--help] [-V|--version]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead"><code>hostname</code> é usado para exibir o nome DNS do sistema e para exibir ou definir seu nome de host ou nome de domínio NIS (Network Information Services).</p>
-            <hr>
-            <hr>dhclient</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>dhclient [ -4 | -6 ] [ -S ] [ -N [ -N... ] ] [ -T [ -T... ] ] [ -P [ -P... ] ] [ -p port ] [ -d ] [ -e VAR=value ] [ -q ] [ -1 ] [ -r | -x ] [ -lf lease-file ] [ -pf pid-file ] [ -cf config-file ] [ -sf script-file ] [ -s server ] [ -g relay ] [ -n ] [ -nc ] [ -nw ] [ -w ] [ -B ] [ -I dhcp-client-identifier ] [ -H host-name ] [ -F fqdn.fqdn ] [ -V vendor-class-identifier ] [ -R request-option-list ] [ -timeout timeout ] [ -v ] [ --version ][ if0 [ ...ifN ] ]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">O Cliente DHCP do Internet Systems Consortium, dhclient, fornece um meio de configurar uma ou mais interfaces de rede usando o protocolo BOOTP ou, se esses protocolos falharem, atribuindo estaticamente um endereço.</p>
-            <hr>
-            <h2>route</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>route [-CFvnee]<br><br></code>
-            <code>route [-v] [-A family] add [-net|-host] target [netmask Nm] [gw Gw] [metric N] i [mss M] [window W] [irtt m] [reject] [mod] [dyn] [reinstate] [[dev] If]<br><br></code>
-            <code>route [-v] [-A family] del [-net|-host] target [gw Gw] [netmask Nm] [metric N] [[dev] If]<br><br></code>
-            <code>route [-V] [--version] [-h] [--help]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">Mostrar ou manipular a tabela de roteamento IP.</p>
-            <hr>
-            <h2>host</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>host [-aCdlnrsTwv] [-c class] [-N ndots] [-R number] [-t type] [-W wait] [-m flag] [-4] [-6] {name} [server]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">Utilitário de pesquisa de DNS (e pesquisa inversa).</p>
-            <hr>
-            <h2>mii-tool</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>mii-tool [-v, --verbose] [-V, --version] [-R, --reset] [-r, --restart] [-w, --watch] [-l, --log] [-A, --advertise=media,...] [-F, --force=media] [interface ...]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">Este utilitário verifica ou define o status da unidade MII (Media Independent Interface) da interface de rede. A maioria dos adaptadores Ethernet rápidos usa uma MII para autonegociar a velocidade do link e a configuração do duplex.</p>
-            <hr>
-            <h2>tcpdump</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>tcpdump [ -AbdDefhHIJKlLnNOpqRStuUvxX ] [ -B buffer_size ] [ -c count ] [ -C file_size ] [ -G rotate_seconds ] [ -F file ] [ -i interface ] [ -j tstamp_type ] [ -m module ] [ -M secret ] [ -r file ] [ -s snaplen ] [ -T type ] [ -w file ] [ -W filecount ] [ -E spi@ipaddr algo:secret,... ] [ -y datalinktype ] [ -z postrotate-command ] [ -Z user ] [ expression ]</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">O <code>Tcpdump</code> imprime uma descrição do conteúdo dos pacotes em uma interface de rede que corresponde à expressão booleana especificada na linha de comando. Ele também pode ser executado com o sinalizador -w, o que faz com que ele salve os dados do pacote em um arquivo para análise posterior ou com o sinalizador -r, que faz com que ele leia um arquivo de pacote salvo em vez de ler pacotes de um pacote interface de rede.</p>
-            <hr>
-            <h2>iwconfig</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>iwconfig [interface]<br><br></code>
-            <code>iwconfig interface [essid X] [nwid N] [mode M] [freq F] [channel C][sens S ] [ap A ][nick NN ] [rate R] [rts RT] [frag FT] [txpower T] [enc E] [key K] [power P] [retry R] [modu M] [commit]<br><br></code>
-            <code>iwconfig --help<br><br></code>
-            <code>iwconfig --version</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">O Iwconfig é semelhante ao ifconfig, mas é dedicado às interfaces sem fio. Ele é usado para definir os parâmetros da interface de rede que são específicos para a operação sem fio (a frequência sem fio, por exemplo). O Iwconfig também pode ser usado para exibir esses parâmetros e as estatísticas sem fio (extraídas de / proc / net / wireless).</p>
-            <hr>
-            <h2>whois</h2>
-            <h3 class="pt-2">Syntax</h3>
-            <code>whois [ -h HOST ] [ -p PORT ] [ -aCFHlLMmrRSVx ] [ -g SOURCE:FIRST-LAST ] [ -i ATTR ] [ -S SOURCE ] [ -T TYPE ] object<br><br></code>
-            <code>whois -t TYPE<br><br></code>
-            <code>whois -v TYPE<br><br></code>
-            <code>whois -q keyword</code>
-            <h3 class="pt-3">Sobre</h3>
-            <p class="lead">whois procura por um objeto em um banco de dados WHOIS. WHOIS é um protocolo de consulta e resposta amplamente usado para consultar bancos de dados que armazenam os usuários registrados de um recurso da Internet, como um nome de domínio ou um bloco de endereços IP, mas também é usado para uma variedade maior de outras informações.</p>
+
+<h2>wget</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>wget [option]... [URL]...</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>wget</code> significa "<strong>w</strong>eb <strong>get</strong>"</p>
+
+<p class="lead"><code>wget</code> é um comando utilitario que faz download de ficheiros de uma rede</p>
+
+<hr>
+
+<h2>dig</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>dig [@server] [-b address] [-c class] [-f filename] [-k filename] [-p port#] [-t type] [-x addr] [-y name:key] [-4] [-6] [name] [type] [class] [queryopt...]<br><br></code>
+
+<code>dig [-h]<br><br></code>
+
+<code>dig [global-queryopt...] [query...]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>dig</code> (que significa <strong>D</strong>omain <strong>I</strong>nformation <strong>G</strong>roper) é uma ferramenta flexível para interrogar servidores de nomes DNS.</p>
+
+<hr>
+
+<h2>ifconfig</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>ifconfig [-v] [-a] [-s] [interface]<br><br></code>
+
+<code>ifconfig [-v] interface [aftype] options | address ...</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>ifconfig</code> significa "<strong>I</strong>nter<strong>f</strong>ace <strong>Config</strong>uration", é usado para visualizar e alterar a configuração das interfaces de rede em seu sistema.</p>
+
+<hr>
+
+<h2>ifdown</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>ifdown [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>ifdown</code> retira uma interface de rede, colocando-a em um estado em que não pode transmitir ou receber dados.</p>
+
+<hr>
+
+<h2>ifup</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>ifup [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...<br><br></code>
+
+<code>ifup -h|--help<br><br></code>
+
+<code>ifup -V|--version</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>ifup</code> traz uma interface de rede para cima, disponibilizando-a para transmitir e receber dados.</p>
+
+<hr>
+
+<h2>ifquery</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>ifquery [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...<br><br></code>
+
+<code>ifquery -l|--list [-nv] [--no-act] [--verbose] [-i FILE|--interfaces=FILE] [--allow CLASS] -a|IFACE...</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>ifquery</code> analisa a configuração de uma interface de rede, permitindo que você obtenha respostas para perguntas sobre como ela está configurada atualmente.</p>
+
+<hr>
+
+<h2>mtr</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>mtr [-hvrctglspni46] [--help] [--version] [--report] [--report-cycles COUNT] [--curses] [--split] [--raw] [--no-dns] [--gtk] [--address IP.ADD.RE.SS] [--interval SECONDS] [--psize BYTES | -s BYTES] HOSTNAME [PACKETSIZE]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">Diagnóstico de rede (<code>traceroute</code> / <code>ping</code>)</p>
+
+<p class="lead">O <code>mtr</code> combina a funcionalidade dos programas <code>traceroute</code> e <code>ping</code> em uma ferramenta de diagnóstico de rede.</p>
+
+<hr>
+
+<h2>nc</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>nc [-46bCDdhklnrStUuvZz] [-I length] [-i interval] [-O length] [-P proxy_username] [-p source_port] [-q seconds] [-s source] [-T toskeyword] [-V rtable] [-w timeout] [-X proxy_protocol] [-x proxy_address[:port]] [destination] [port]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>nc</code> é o comando que executa o netcat, um utilitário simples do Unix que lê e grava dados através de conexões de rede, usando o protocolo TCP ou UDP. Ele é projetado para ser uma ferramenta de "back-end" confiável que pode ser usada diretamente ou conduzida por outros programas e scripts. Ao mesmo tempo, é uma ferramenta de depuração e exploração de rede rica em recursos, pois pode criar praticamente qualquer tipo de conexão que você precisa e possui vários recursos internos interessantes.</p>
+
+<hr>
+
+<h2>netstat</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>netstat [address_family_options] [--tcp|-t] [--udp|-u] [--raw|-w] [--listening|-l] [--all|-a] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--symbolic|-N] [--extend|-e[--extend|-e]] [--timers|-o] [--program|-p] [--verbose|-v] [--continuous|-c]<br><br></code>
+
+<code>netstat {--route|-r} [address_family_options] [--extend|-e[--extend|-e]] [--verbose|-v] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
+
+<code>netstat {--interfaces|-i} [--all|-a] [--extend|-e[--extend|-e]] [--verbose|-v] [--program|-p] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
+
+<code>netstat {--groups|-g} [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
+
+<code>netstat {--masquerade|-M} [--extend|-e] [--numeric|-n] [--numeric-hosts] [--numeric-ports] [--numeric-users] [--continuous|-c]<br><br></code>
+
+<code>netstat {--statistics|-s} [--tcp|-t] [--udp|-u] [--raw|-w]<br><br></code>
+
+<code>netstat {--version|-V}<br><br></code>
+
+<code>netstat {--help|-h}</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>netstat</code> ("<code>net</code>work <code>stat</code>istics") é uma ferramenta de linha de comando que exibe conexões de rede (entrada e saída), tabelas de roteamento e várias interfaces de rede (controlador de interface de rede ou interface de rede definida por software) e de protocolo de rede.</p>
+
+<hr>
+
+<h2>nslookup</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>nslookup [-option] [name | -] [server]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">O <code>nslookup</code>, que significa "<code>n</code>ame <code>s</code>erver <code>lookup</code>", é uma ferramenta útil para descobrir informações sobre um domínio nomeado.</p>
+
+<hr>
+
+<h2>ip</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>ip [ OPTIONS ] OBJECT { COMMAND | help }</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">Mostrar e manipular roteamento, dispositivos, roteamento de políticas e túneis.</p>
+
+<hr>
+
+<h2>ping</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>ping [-LRUbdfnqrvVaAB] [-c count] [-m mark] [-i interval] [-l preload] [-p pattern] [-s packetsize] [-t ttl] [-w deadline] [-F flowlabel] [-I interface] [-M hint] [-N nioption] [-Q tos] [-S sndbuf] [-T timestamp option] [-W timeout] [hop ...] destination</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">O <code>ping</code> é uma maneira simples de enviar dados de rede e receber dados de rede de outro computador em uma rede. É frequentemente usado para testar, no nível mais básico, se outro sistema pode ser acessado por uma rede e, em caso afirmativo, quanto tempo leva para que os dados sejam trocados.</p>
+
+<hr>
+
+<h2>rsync</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<p class="lead">Uso local:</p>
+
+<code>rsync [OPTION...] SRC... [DEST]</code>
+
+<p class="lead">Acesso via shell remoto (PULL):</p>
+
+<code>rsync [OPTION...] [USER@]HOST:SRC... [DEST]</code>
+
+<p class="lead">Acesso via shell remoto (PUSH):</p>
+
+<code>rsync [OPTION...] SRC... [USER@]HOST:DEST</code>
+
+<p class="lead">Acesso via daemon rsync (PULL):</p>
+
+<code>rsync [OPTION...] [USER@]HOST::SRC... [DEST]<br><br></code>
+
+<code>rsync [OPTION...] rsync://[USER@]HOST[:PORT]/SRC... [DEST]</code>
+
+<p class="lead">Acesso via daemon rsync (PUSH):</p>
+
+<code>rsync [OPTION...] SRC... [USER@]HOST::DEST<br><br></code>
+
+<code>rsync [OPTION...] SRC... rsync://[USER@]HOST[:PORT]/DEST</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">O <code>rsync</code> é uma ferramenta de cópia de arquivos rápida e extraordinariamente versátil. Pode copiar localmente, para / de outro host através de qualquer shell remoto, ou para / de um daemon <code>rsync</code> remoto. Ele oferece um grande número de opções que controlam cada aspecto de seu comportamento e permite uma especificação muito flexível do conjunto de arquivos a serem copiados. É famosa por seu algoritmo de transferência delta, que reduz a quantidade de dados enviados pela rede enviando apenas as diferenças entre os arquivos de origem e os arquivos existentes no destino. O <code>rsync</code> é amplamente usado para backups e espelhamento e como um comando de cópia aprimorado para uso diário.</p>
+
+<hr>
+
+<h2>ethtool</h2>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">O <code>ethtool</code> é usado para consultar e controlar configurações de hardware e driver de dispositivo de rede, particularmente para dispositivos Ethernet com fio.</p>
+
+<hr>
+
+<h2>traceroute</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>traceroute [-46dFITUnreAV] [-f first_ttl] [-g gate,...] [-i device] [-m max_ttl] [-p port] [-s src_addr] [-q nqueries] [-N squeries] [-t tos] [-l flow_label] [-w waittime] [-z sendwait] [-UL] [-D] [-P proto] [--sport=port] [-M method] [-O mod_options] [--mtu] [--back] host [packet_len] </code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>traceroute</code> imprime a rota que os pacotes levam para um host de rede.</p>
+
+<hr>
+
+<h2>hostname</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>hostname [-v] [-a|--alias] [-d|--domain] [-f|--fqdn|--long] [-A|--all-fqdns] [-i|--ip-address] [-I|--all-ip-addresses] [-s|--short] [-y|--yp|--nis]<br><br></code>
+
+<code>hostname [-v] [-b|--boot] [-F|--file file name] [hostname]<br><br></code>
+
+<code>hostname [-v] [-h|--help] [-V|--version]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>hostname</code> é usado para exibir o nome DNS do sistema e para exibir ou definir seu nome de host ou nome de domínio NIS (Network Information Services).</p>
+
+<hr>
+
+<hr>dhclient</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>dhclient [ -4 | -6 ] [ -S ] [ -N [ -N... ] ] [ -T [ -T... ] ] [ -P [ -P... ] ] [ -p port ] [ -d ] [ -e VAR=value ] [ -q ] [ -1 ] [ -r | -x ] [ -lf lease-file ] [ -pf pid-file ] [ -cf config-file ] [ -sf script-file ] [ -s server ] [ -g relay ] [ -n ] [ -nc ] [ -nw ] [ -w ] [ -B ] [ -I dhcp-client-identifier ] [ -H host-name ] [ -F fqdn.fqdn ] [ -V vendor-class-identifier ] [ -R request-option-list ] [ -timeout timeout ] [ -v ] [ --version ][ if0 [ ...ifN ] ]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">O Cliente DHCP do Internet Systems Consortium, <code>dhclient</code>, fornece um meio de configurar uma ou mais interfaces de rede usando o protocolo <code>BOOTP</code> ou, se esses protocolos falharem, atribuindo estaticamente um endereço.</p>
+
+<hr>
+
+<h2>route</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>route [-CFvnee]<br><br></code>
+
+<code>route [-v] [-A family] add [-net|-host] target [netmask Nm] [gw Gw] [metric N] i [mss M] [window W] [irtt m] [reject] [mod] [dyn] [reinstate] [[dev] If]<br><br></code>
+
+<code>route [-v] [-A family] del [-net|-host] target [gw Gw] [netmask Nm] [metric N] [[dev] If]<br><br></code>
+
+<code>route [-V] [--version] [-h] [--help]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">Mostrar ou manipular a tabela de roteamento IP.</p>
+
+<hr>
+
+<h2>host</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>host [-aCdlnrsTwv] [-c class] [-N ndots] [-R number] [-t type] [-W wait] [-m flag] [-4] [-6] {name} [server]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">Utilitário de pesquisa de DNS (e pesquisa inversa).</p>
+
+<hr>
+
+<h2>mii-tool</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>mii-tool [-v, --verbose] [-V, --version] [-R, --reset] [-r, --restart] [-w, --watch] [-l, --log] [-A, --advertise=media,...] [-F, --force=media] [interface ...]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">Este utilitário verifica ou define o status da unidade MII (Media Independent Interface) da interface de rede. A maioria dos adaptadores Ethernet rápidos usa uma MII para autonegociar a velocidade do link e a configuração do duplex.</p>
+
+<hr>
+
+<h2>tcpdump</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>tcpdump [ -AbdDefhHIJKlLnNOpqRStuUvxX ] [ -B buffer_size ] [ -c count ] [ -C file_size ] [ -G rotate_seconds ] [ -F file ] [ -i interface ] [ -j tstamp_type ] [ -m module ] [ -M secret ] [ -r file ] [ -s snaplen ] [ -T type ] [ -w file ] [ -W filecount ] [ -E spi@ipaddr algo:secret,... ] [ -y datalinktype ] [ -z postrotate-command ] [ -Z user ] [ expression ]</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">O <code>Tcpdump</code> imprime uma descrição do conteúdo dos pacotes em uma interface de rede que corresponde à expressão booleana especificada na linha de comando. Ele também pode ser executado com o sinalizador -w, o que faz com que ele salve os dados do pacote em um arquivo para análise posterior ou com o sinalizador -r, que faz com que ele leia um arquivo de pacote salvo em vez de ler pacotes de um pacote interface de rede.</p>
+
+<hr>
+
+<h2>iwconfig</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>iwconfig [interface]<br><br></code>
+
+<code>iwconfig interface [essid X] [nwid N] [mode M] [freq F] [channel C][sens S ] [ap A ][nick NN ] [rate R] [rts RT] [frag FT] [txpower T] [enc E] [key K] [power P] [retry R] [modu M] [commit]<br><br></code>
+
+<code>iwconfig --help<br><br></code>
+
+<code>iwconfig --version</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead">O <code>Iwconfig</code> é semelhante ao <code>ifconfig</code>, mas é dedicado às interfaces sem fio. Ele é usado para definir os parâmetros da interface de rede que são específicos para a operação sem fio (a frequência sem fio, por exemplo). O <code>Iwconfig</code> também pode ser usado para exibir esses parâmetros e as estatísticas sem fio (extraídas de / proc / net / wireless).</p>
+
+<hr>
+
+<h2>whois</h2>
+
+<h3 class="pt-2">Syntax</h3>
+
+<code>whois [ -h HOST ] [ -p PORT ] [ -aCFHlLMmrRSVx ] [ -g SOURCE:FIRST-LAST ] [ -i ATTR ] [ -S SOURCE ] [ -T TYPE ] object<br><br></code>
+
+<code>whois -t TYPE<br><br></code>
+
+<code>whois -v TYPE<br><br></code>
+
+<code>whois -q keyword</code>
+
+<h3 class="pt-3">Sobre</h3>
+
+<p class="lead"><code>whois</code> procura por um objeto em um banco de dados <code>WHOIS</code>. <code>WHOIS</code> é um protocolo de consulta e resposta amplamente usado para consultar bancos de dados que armazenam os usuários registrados de um recurso da Internet, como um nome de domínio ou um bloco de endereços IP, mas também é usado para uma variedade maior de outras informações.</p>
             <!-- FIM -->
           </div>
         </div>
