@@ -92,6 +92,15 @@ Router::scope('/', function (RouteBuilder $routes) {
   $routes->connect('/ubuntu', ['controller' => 'Pages', 'action' => 'ubuntu']);
 
   $routes->connect('/postfix', ['controller' => 'Pages', 'action' => 'postfixUbuntu']);
+
+  $routes->connect('web/frontend/twig', ['controller' => 'Pages', 'action' => 'twig']);
+
+    $routes->connect('web/frontend/cmd', ['controller' => 'Pages', 'action' => 'linux']);
+
+    $routes->connect('web/frontend/boot', ['controller' => 'Pages', 'action' => 'bootstrap']);
+
+    $routes->connect('web/frontend', ['controller' => 'Pages', 'action' => 'webFront']);
+
     /**
 
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
